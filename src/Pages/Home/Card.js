@@ -8,7 +8,7 @@ const Card = ({post}) => {
     const { firstName  , lastName, picture, title} = owner;
     return (
         <div>
-            <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-xl bg-base-200 shadow-2xl">
+            <div className="flex flex-col max-w-lg min-h-[680px] p-6 space-y-6 overflow-hidden rounded-xl bg-base-200 shadow-2xl">
                 <div className="flex space-x-4">
                     <img alt="" src={picture} className="object-cover w-12 h-12 rounded-full shadow bg-gray-500" />
                     <div className="flex flex-col space-y-1">
