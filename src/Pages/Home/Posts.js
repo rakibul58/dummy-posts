@@ -23,15 +23,15 @@ const Posts = () => {
     }, []);
 
     return (
-        <div data-aos="fade-right">
+        <div data-aos="fade-right" className='px-10'>
             <div className='text-center'>
                 <h4 className='text-2xl font-extrabold text-primary'>Posts</h4>
                 <h1 className='text-5xl text-base-content mb-6'>These are some of the Posts</h1>
-                <p className='w-2/3 mx-auto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, tenetur corporis hic consectetur enim at animi? Eligendi culpa inventore nostrum, iste quidem doloribus maiores molestias temporibus tempora repellendus magnam eum cupiditate sed quis velit numquam a, unde ipsam voluptas aspernatur cum. Odit, minima vitae assumenda pariatur nobis facere ad quae!</p>
+                <p className='w-2/3 mx-auto mb-12'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, tenetur corporis hic consectetur enim at animi? Eligendi culpa inventore nostrum, iste quidem doloribus maiores molestias temporibus tempora repellendus magnam eum cupiditate sed quis velit numquam a, unde ipsam voluptas aspernatur cum. Odit, minima vitae assumenda pariatur nobis facere ad quae!</p>
             </div>
-            <div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'>
                 {
-                    posts.map(post => <Card></Card>)
+                    posts.map(post => <Card key={post.id} post={post}></Card>)
                 }
             </div>
         </div>
